@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidade - Pokédex</title>
+    <style>
+        /* Variáveis de Cores Baseadas no App */
+        :root {
+            --cor-primaria: #DC0A2D; /* Vermelho principal do cabeçalho/fundo */
+            --cor-secundaria: #FFFFFF; /* Branco dos cards/fundo */
+            --cor-texto-principal: #333333; /* Cinza escuro para o texto */
+            --cor-texto-secundario: #666666; /* Cinza mais claro */
+            --cor-destaque: #000000; /* Preto para títulos */
+            --cor-sombra: rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo Básico e Fontes */
+        body {
+            font-family: 'Roboto', 'Arial', sans-serif; /* Fonte comum e limpa */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto-principal);
+        }
+
+        /* Layout Principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: var(--cor-primaria);
+            color: var(--cor-secundaria);
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-weight: 700;
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 1.1em;
+        }
+
+        /* Imagem de Destaque (Opcional, baseada na imagem pokemon.png) */
+        .logo-app {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid var(--cor-secundaria);
+            box-shadow: 0 0 10px var(--cor-sombra);
+        }
+
+        /* Seções da Política */
+        section {
+            background-color: var(--cor-secundaria);
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px var(--cor-sombra);
+        }
+
+        h2 {
+            color: var(--cor-destaque);
+            border-bottom: 2px solid var(--cor-primaria);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 1.8em;
+            font-weight: 600;
+        }
+
+        h3 {
+            color: var(--cor-primaria);
+            margin-top: 20px;
+            font-size: 1.3em;
+            font-weight: 500;
+        }
+
+        p, ul {
+            font-size: 1em;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Destaque para Não Coleta */
+        .destaque-nao-coleta {
+            background-color: #ffe0e5; /* Um vermelho/rosa claro */
+            border-left: 5px solid var(--cor-primaria);
+            padding: 15px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: var(--cor-destaque);
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: var(--cor-texto-secundario);
+            margin-top: 40px;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 600px) {
+            header {
+                padding: 30px 15px;
+            }
+            header h1 {
+                font-size: 2em;
+            }
+            .container {
+                padding: 10px;
+            }
+            section {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="pokemon.png" alt="Logo do Aplicativo Pokédex" class="logo-app">
+        <h1>Política de Privacidade</h1>
+        <p>Aplicativo Pokédex</p>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <h2>Introdução</h2>
+            <p><strong>Última Atualização:</strong> 17 de Novembro de 2025</p>
+            <p>Esta Política de Privacidade descreve como o aplicativo móvel <strong>Pokédex</strong> (o "Aplicativo"), desenvolvido por <strong>AndersonPS</strong> (o "Desenvolvedor"), trata as informações de seus usuários (cada um, um "Usuário").</p>
+            <p>O Desenvolvedor está profundamente comprometido em proteger a privacidade de seus Usuários. Esta política foi elaborada para ser **clara, objetiva e transparente**, garantindo total conformidade com as políticas de **Dados do Usuário** do Google Play.</p>
+        </section>
+
+        <section>
+            <h2>1. Coleta de Dados Pessoais</h2>
+            <div class="destaque-nao-coleta">
+                O Aplicativo Pokédex **NÃO coleta nenhuma informação de identificação pessoal (PII) ou dados pessoais** de seus Usuários.
+            </div>
+            <p>O Aplicativo foi projetado para funcionar sem a necessidade de coletar, transmitir ou armazenar qualquer dado que possa identificar um indivíduo, como nome, endereço de e-mail, localização precisa, identificadores de dispositivo persistentes ou qualquer outra informação sensível.</p>
+        </section>
+
+        <section>
+            <h2>2. Uso de Dados</h2>
+            <p>O Aplicativo Pokédex tem como única finalidade fornecer informações sobre Pokémons. Para isso, ele realiza as seguintes operações:</p>
+            <ul>
+                <li>**Consumo de API Pública:** O Aplicativo consome dados exclusivamente de uma **API pública** (Application Programming Interface) para listar e exibir informações sobre Pokémons. Esses dados são públicos e não estão vinculados a nenhum Usuário.</li>
+                <li>**Cache Local:** O Aplicativo salva dados (informações de Pokémons) **apenas localmente no dispositivo do Usuário** utilizando um Room Database para fins de cache e para permitir o funcionamento offline. Esses dados de cache são estritamente operacionais e não são transmitidos para o Desenvolvedor ou terceiros.</li>
+            </ul>
+            <p><strong>Nenhum dado de Usuário é usado para fins de publicidade, análise, rastreamento ou qualquer outra finalidade comercial.</strong></p>
+        </section>
+
+        <section>
+            <h2>3. Compartilhamento de Dados com Terceiros</h2>
+            <div class="destaque-nao-coleta">
+                O Aplicativo Pokédex **NÃO compartilha NENHUM dado de Usuário com terceiros.**
+            </div>
+            <p>Dado que o Aplicativo não coleta dados pessoais, não há dados a serem compartilhados. O Aplicativo não utiliza serviços de terceiros como Firebase, Google Analytics, SDKs de publicidade ou qualquer outro serviço de rastreamento.</p>
+        </section>
+
+        <section>
+            <h2>4. Retenção de Dados</h2>
+            <p>Os dados (informações de Pokémons) armazenados localmente no dispositivo do Usuário para fins de cache são retidos apenas enquanto o Aplicativo estiver instalado no dispositivo. O Desenvolvedor não tem acesso a esses dados e, portanto, não os retém.</p>
+        </section>
+
+        <section>
+            <h2>5. Segurança dos Dados</h2>
+            <p>Embora o Aplicativo não colete dados pessoais, o Desenvolvedor adota medidas razoáveis para garantir a segurança dos dados operacionais (cache de Pokémons) armazenados localmente. O Aplicativo não exige permissões sensíveis do Android, minimizando o risco de acesso não autorizado a informações do dispositivo.</p>
+        </section>
+
+        <section>
+            <h2>6. Privacidade de Menores</h2>
+            <p>O Aplicativo Pokédex **NÃO é voltado para crianças** menores de 13 anos. No entanto, devido à natureza do Aplicativo (que não coleta dados pessoais), a privacidade de qualquer Usuário, independentemente da idade, é protegida pelo fato de que nenhuma informação pessoal é coletada.</p>
+        </section>
+
+        <section>
+            <h2>7. Alterações a Esta Política de Privacidade</h2>
+            <p>O Desenvolvedor reserva-se o direito de atualizar esta Política de Privacidade a qualquer momento. Quando o fizer, a data de "Última Atualização" no topo desta página será revisada. Encorajamos os Usuários a verificar esta página periodicamente para quaisquer alterações. O uso continuado do Aplicativo após a publicação de alterações nesta política será considerado como aceitação dessas alterações.</p>
+        </section>
+
+        <section>
+            <h2>8. Informações de Contato</h2>
+            <p>Se você tiver quaisquer perguntas sobre esta Política de Privacidade, as práticas deste Aplicativo ou suas relações com este Aplicativo, entre em contato com o Desenvolvedor:</p>
+            <ul>
+                <li>**Nome do Desenvolvedor:** AndersonPS</li>
+                <li>**E-mail de Contato:** <a href="mailto:andersonpsdev@gmail.com">andersonpsdev@gmail.com</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Declaração de Conformidade com o Google Play</h2>
+            <p>O Aplicativo Pokédex está em total conformidade com a Política de Dados do Usuário do Google Play, pois **não coleta, armazena ou compartilha dados pessoais ou confidenciais do Usuário**. O Aplicativo opera com o mínimo de permissões e foca exclusivamente em fornecer conteúdo público de uma API externa.</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AndersonPS. Todos os direitos reservados.</p>
+        <p>Política de Privacidade do Aplicativo Pokédex.</p>
+    </footer>
+
+</body>
+</html>
